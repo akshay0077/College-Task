@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Using Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .row {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .email {
+            outline: none;
+            border-right: 0;
+            border-left: 0;
+            border-top: 0;
+            border-bottom: 1px solid grey;
+        }
+
+        .eye1 {
+            position: absolute;
+        }
+
+        .but {
+            border-radius: 30px;
+            border: none;
+            width: 100%;
+            height: 50px;
+            background-image: linear-gradient(to right, #1ea3eb, #a371ce);
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row d-flex justify-content-center pt-4">
+            <div class="col-4 shadow p-3 mb-5 bg-white rounded">
+
+                <div class="text-center pt-4">
+                    <h1 class="font-weight-bold">Welcome</h1>
+                </div>
+                <div class="d-flex justify-content-center pt-4">
+                    <button type="button" class="btn btn-dark Display-1 font-weight-bold">AKSHAY KHER</button>
+                </div>
+                <form action="/action_page.php">
+                    <div class="form-group pt-4 mt-4">
+                        <input type="email" class="form-control email" id="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group mt-4">
+                        <span class="pr-4 pt-2 float-right"><i class="fas fa-eye pt-2 eye1"></i> </span>
+                        <input type="password" class="form-control email" id="pwd" placeholder="Password" name="pswd">
+                    </div>
+                    <div class="row d-flex justify-content-center pt-4 mt-4">
+                        <div class="col-10 pt-4">
+                            <button type="submit" class="btn btn-primary but">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="mt-4 pt-4 text-center">
+                    <a>Don't have an account?</a>
+                    <span><a href="#">Sign Up</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
